@@ -1,0 +1,90 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Test",
+        "description": "Twitter chat bot",
+        "contact": {
+            "email": "contact@example.com"
+        },
+        "license": {
+            "name": "Your License",
+            "url": "https://example.com/license"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "app/Api/V1/Controllers"
+        }
+    ],
+    "paths": {
+        "/twitter/subscribe/chatbot": {
+            "get": {
+                "summary": "User subscribe to chat bot respond",
+                "description": "Get a user id and post with the api",
+                "operationId": "bf47a6a1182cb7f6c077b5022d7e9dee",
+                "responses": {
+                    "200": {
+                        "description": "User Subscribe to chat Successful"
+                    },
+                    "400": {
+                        "description": "User Id Not Found"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Post user id to get user to subscribe to the chat bot",
+                "description": "",
+                "operationId": "95f120d998e7efc995d8d5a69ece60f1",
+                "responses": {
+                    "200": {
+                        "description": "User Subscribe to channel Successful"
+                    },
+                    "400": {
+                        "description": "User Id Not Found"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                }
+            }
+        },
+        "/twitter/subscribe/channel": {
+            "get": {
+                "summary": "User subscribe to channel respond",
+                "description": "Get a user id and post with the api",
+                "operationId": "e3a84231be2739c98d7c8fef4fa3b9c6",
+                "responses": {
+                    "200": {
+                        "description": "User Subscribe to channel Successful"
+                    },
+                    "400": {
+                        "description": "User Id Not Found"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Post user id to get user to subscribe to the chat bot",
+                "description": "",
+                "operationId": "7f702dd2288b13042264f3490a0a6425",
+                "responses": {
+                    "200": {
+                        "description": "User Subscribe to channel Successful"
+                    },
+                    "400": {
+                        "description": "User Id Not Found"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                }
+            }
+        }
+    }
+}
