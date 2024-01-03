@@ -4,13 +4,13 @@
  * @OA\Info(
  *     title="Test",
  *     version="1.0.0",
- *     description="Twitter chat bot",
+ *     description="Twitter chat bot with atymic package",
  *     @OA\Contact(
- *         email="contact@example.com"
+ *         email="balogunsunday91@gmail.com"
  *     ),
  *     @OA\License(
- *         name="Your License",
- *         url="https://example.com/license"
+ *         name="Joseph Balogun",
+ *         url="http://localhost:8000"
  *     )
  * )
  */
@@ -146,7 +146,7 @@ class SubscriptionController extends Controller
 
     /**
      * @OA\PathItem(
-     *     path="/twitter/subscribe/channel",
+     *     path="/twitter/subscribers/message",
      *      @OA\Get(
      *         summary="Message sent",
      *         description="Get all user id and send message",

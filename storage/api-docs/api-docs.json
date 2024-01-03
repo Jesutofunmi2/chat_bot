@@ -2,13 +2,13 @@
     "openapi": "3.0.0",
     "info": {
         "title": "Test",
-        "description": "Twitter chat bot",
+        "description": "Twitter chat bot with atymic package",
         "contact": {
-            "email": "contact@example.com"
+            "email": "balogunsunday91@gmail.com"
         },
         "license": {
-            "name": "Your License",
-            "url": "https://example.com/license"
+            "name": "Joseph Balogun",
+            "url": "http://localhost:8000"
         },
         "version": "1.0.0"
     },
@@ -76,6 +76,40 @@
                 "responses": {
                     "200": {
                         "description": "User Subscribe to channel Successful"
+                    },
+                    "400": {
+                        "description": "User Id Not Found"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                }
+            }
+        },
+        "/twitter/subscribers/message": {
+            "get": {
+                "summary": "Message sent",
+                "description": "Get all user id and send message",
+                "operationId": "9a2589406b5af031ffabcc7fceea3fba",
+                "responses": {
+                    "200": {
+                        "description": "User Subscribe to channel Successful"
+                    },
+                    "400": {
+                        "description": "User Id Not Found"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Message sent to user successfully",
+                "description": "",
+                "operationId": "8057855a55d728fa231083a185ad1918",
+                "responses": {
+                    "200": {
+                        "description": "Message sent successfully"
                     },
                     "400": {
                         "description": "User Id Not Found"
